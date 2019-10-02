@@ -1,3 +1,4 @@
+# WIP
 import requests
 from bs4 import BeautifulSoup as bs
 
@@ -15,3 +16,5 @@ print(find_id2.prettyfy())
 for link in soup.findAll('a',{"class":"t1"}):
     href = link.get('href')
     print(href)
+    
+# add a way to check the speed of every site
