@@ -1,8 +1,10 @@
+#webscraper for piratebay
+
 import requests
 from bs4 import BeautifulSoup as bs
 
 siteproxy="https://pirateproxy.ch"
-search_therm="shrek"
+search_therm="shrek" #change to whatever you need
 def pages(br):
     cur_br=0
     while cur_br<=br:
@@ -16,4 +18,4 @@ def pages(br):
         cur_br+=1
         print("new page")
     
-pages(2)
+pages(2)# number of pages to serch
